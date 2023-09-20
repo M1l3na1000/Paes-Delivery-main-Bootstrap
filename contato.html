@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANIFICADORA - PÃES PARA A FAMÍLIA</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/estilo.css" />
+    <!--normalize-->
+    <link rel="stylesheet" type="text/css" href="assets/normalize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d14e5bca35.js" crossorigin="anonymous"></script>
+    <style>
+        .contato-header{
+            background-image: url(assets/imagens/cardapio-pexel.jpg);
+            height: 200px;     
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md fixed-to">                
+        <div class="collapse navbar-collapse" id="nav-principal">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cardapio.html" class="nav-link">CARDÁPIO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pedido.html" class="nav-link">PEDIDO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contato.html" class="nav-link">CONTATO</a>
+                </li>
+            </ul>
+        </div>    
+    </nav>
+    <header class="contato-header">
+        <h1 style="color: white; padding-top: 20px; text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri;">Contato</h1>
+        <h5 style="color: white; text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri;">Os melhores pães do país</h5>
+    </header>
+
+    <div class="flex" id="contato">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">WhatsApp
+                        <span>
+                            <i class="fa fa-whatsapp"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Facebook
+                        <span>
+                            <i class="fa fa-facebook"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Instagram
+                        <span>
+                            <i class="fa fa-instagram"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Gmail
+                        <span>
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div id="mensagem-contato">
+            <h4 style="font-weight: bold;">Deixe uma mensagem</h4>
+            <p>Comente sobre o site e sobre nossos produtos, deixe sua avaliação</p>
+                <form>
+                    <fieldset>
+                        <div class="flex">
+                            <div class="input-box">
+                                <input class="input-contato" type="text" id="text" value="nome">
+                            </div>
+                            <div class="input-box">
+                                <input class="input-contato" type="text" id="email" value="email">
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="input-box">
+                                <input class="input-contato" type="tel" id="tel" value="telefone">
+                            </div>
+                            <div class="input-box">
+                                <input class="input-contato" type="text" id="text" value="assunto">
+                            </div>
+                        </div>
+                        <input  class="input-contato" type="text" id="text" value="mensagem" style="width: 375px; height: 100px;">
+                    </fieldset>
+                    <br>
+                    <input class="botao" type="submit" value="Enviar Mensagem"> 
+                </form>
+        </div>
+    </div>
+    <hr style="border-top: 3px dashed black;">
+    <div id="encontre">
+        <h2 style="font-weight: bold;">Encontre-nos</h2>
+        <br>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28830.191846013342!2d-51.51644272568363!3d-25.412375199999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ef498acceaf1f9%3A0x41337ee2a2a1a569!2sPanificadora%20da%20Fam%C3%ADlia!5e0!3m2!1spt-BR!2sbr!4v1693073902175!5m2!1spt-BR!2sbr"
+            width="900" height="700" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    <footer>
+        <div class="flex container">
+            <div id="footer-texto">
+                <h4>Contato</h4>
+                <br>
+                <p><strong>Segunda a Sábado</strong> - 6:30h às 20h</p>
+                <p><strong>Domingo</strong> - 6:30h às 18h</p>
+                <br>
+                <p><strong>(42) 3625-1433</strong></p>
+                <p><strong>(42) 999231422</strong></p>
+                <br>
+                <p>Rua LOREM, n°123, Guarapuava,PR-BR</p>
+                <p>85139-400</p>
+                <br>
+                <p>panificadora@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    <div id="fim">
+        <h4>Todos os direitos reservados</h4>
+    </div>
+
+</body>
+
+</html>

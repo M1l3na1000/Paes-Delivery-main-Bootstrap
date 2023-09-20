@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANIFICADORA - PÃES PARA A FAMÍLIA</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/estilo.css" />
+    <!--normalize-->
+    <link rel="stylesheet" type="text/css" href="assets/normalize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d14e5bca35.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        .pedido-header{
+            background-image: url(assets/imagens/cardapio-pexel.jpg);
+            height: 200px;     
+        }
+        .link-pedido:link{
+            text-decoration: none;
+            color: #333;
+        }
+        .link-pedido:visited{
+            color: #333;
+        }
+        .link-pedido:hover{
+            color: #5f757a;
+            text-shadow:0px 0px 5px #5f757a;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .link-pedido:active{
+            color: black;
+            text-shadow:0px 0px 5px black; 
+        }
+        .qtd-pedido button{
+            width: 20px;
+            background-color: antiquewhite;
+        }
+        .qtd-pedido button:hover{
+            background-color: rgb(204, 154, 89);
+        }
+        .cupom{
+            background-color: #6c63ff;
+            border-radius: 5px;
+            color: #fff;
+            padding: 5px;
+        }
+        .cupom:hover{
+            background-color: #2b24ab;
+        }
+        #finalizar-pedido{
+            background-color: #fde3a7d7;
+            color: black;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        #finalizar-pedido:hover{
+            background-color: #e9a609d7;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md fixed-to">                
+        <div class="collapse navbar-collapse" id="nav-principal">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cardapio.html" class="nav-link">CARDÁPIO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pedido.html" class="nav-link">PEDIDO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contato.html" class="nav-link">CONTATO</a>
+                </li>
+            </ul>
+        </div>    
+    </nav>
+    <header class="pedido-header">
+        <h1 style="color: whitesmoke; padding-top: 20px; text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri;">Pedido</h1>
+        <h5 style="color: white; text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri;">Os melhores pães do país</h5>
+    </header>
+
+    <div class="ajuda">
+        <div id="ajuda-titulo">
+            <h2>Precisa de Ajuda?</h2>
+            <h4>Guia explicativo ao lado</h4>
+        </div>
+        <div id="ajuda-lista">
+            <ol>
+                <li>Cadastre-se ou Entre (se já for cadastrado)</li>
+                <li>Vá até o cardápio e escolha um produto</li>
+                <li>Selecione a quantidade que deseja do produto</li>
+                <li>Caso necessite de algo a mais ou diferente, pode fazer um comentário nos detalhes do pedido</li>
+                <li>Clique em adicionar ao carrinho</li>
+                <p>(você pode adicionar vários outros produtos da mesma forma)</p>
+                <li>Volte a página de pedidos, veja se está tudo ok</li>
+                <li>Se tiver cupom de descontos, adicione aqui na aba CUPONS</li>
+                <li>Após revisar seu pedido</li>
+                <li>Clique em confirmar pedido e será direcionado a outra aba para confirmar o pagamento e a entrega</li>
+                <li>E então é só fechar o pedido e acompanhar a entrega</li>
+                <li>Em qualquer dúvida estamos aqui para ajudá-lo, entre na aba contato</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="containerPd">
+        <div class="containerP">
+            <div class="form-image">
+                <img src="assets/imagens/undraw_shopping_re_hdd9.svg">
+            </div>
+            <div class="form">
+                <form action="#">
+                    <div class="form-header">
+                        <div class="titleCadastro">
+                            <h1>Cadastre-se</h1>
+                        </div>
+                        <div class="login-button">
+                            <button><a href="#">Entrar</a></button>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="flex">
+                            <div>
+                                <div class="input-box">
+                                    <label for="firstname">Primeiro nome</label>
+                                    <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for="lastname">Sobrenome</label>
+                                    <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for="email">E-mail</label>
+                                    <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="input-box">
+                                    <label for="number">Celular</label>
+                                    <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for="password">Senha</label>
+                                    <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for="password">Confirme sua Senha</label>
+                                    <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="gender-inputs">
+                        <div class="gender-title">
+                            <h6>Gênero</h6>
+                        </div>
+                        <div class="gender-group">
+                            <div class="gender-input">
+                                <input type="radio"id=female name="gender">
+                                <label for="female">Feminino</label>
+                            </div>
+                            <div class="gender-input">
+                                <input type="radio"id=male name="gender">
+                                <label for="male">Masculino</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="continue-button">
+                        <button><a href="#">Continuar</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr style="border-top: 3px dashed black;">
+    <h2 style="margin: 30px auto; text-align:center;font-weight: bold;padding: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Carrinho</h2>
+    
+    <div class="flex" style="margin: 20px auto; text-align: center; justify-content: center;">
+        <div>
+            <table id="carrinho">
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    <th>Total</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="flex">
+                            <div>
+                                <img src="assets/imagens/pão-frances.png" width="150px" height="150px">
+                            </div>
+                            <div>
+                                <a class="link-pedido" href="paofrances.html">Pão Francês</a>
+                                <p>Tradicional</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>R$ 0,5</td>
+                    <td>
+                        <div class="qtd-pedido">
+                            <button>-</button>
+                            <span>50</span>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>R$ 25,00</td>
+                    <td class="qtd-pedido">
+                        <button>X</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex">
+                            <div>
+                                <img src="assets/imagens/ciabatta-removebg-preview.png" width="150px" height="150px">
+                            </div>
+                            <div>
+                                <a class="link-pedido" href="">Pão Ciabatta</a>
+                                <p>Especial</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>R$ 11,50</td>
+                    <td>
+                        <div class="qtd-pedido">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>R$ 11,50</td>
+                    <td class="qtd-pedido">
+                        <button>X</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex">
+                            <div>
+                                <img src="assets/imagens/estrela-removebg-preview.png" width="150px" height="150px">
+                            </div>
+                            <div>
+                                <a class="link-pedido" href="">Pão Estrela</a>
+                                <p>Nobres</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>R$ 20,00</td>
+                    <td>
+                        <div class="qtd-pedido">
+                            <button>-</button>
+                            <span>2</span>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>R$ 40,00</td>
+                    <td class="qtd-pedido">
+                        <button>X</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="cupom">Adicionar mais produtos</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <aside id="resumo">
+            <div>
+                <h5 style="font-weight: bold;">Resumo da compra</h5>
+                <div style="background-color: #e7e6e6; padding: 10px;">
+                  <div><span>Sub-total</span><span style="margin-left: 10px;">R$ 76,50</span></div>
+                  <p>Frete-gratuito</p>
+                  <div>
+                    <button class="cupom">
+                      Adicionar cupom de desconto
+                    </button>
+                  </div>
+                </div>
+                <br>
+                <div>
+                  <span>Total</span>
+                  <span>R$ 76,50</span>
+                </div>
+            </div>
+              <button id="finalizar-pedido">Finalizar Compra</button>
+        </aside>
+    </div>
+   
+    <hr style="border-top: 3px dashed black;">
+    
+    <footer>
+        <div class="flex container">
+            <div id="footer-texto">
+                <h4>Contato</h4>
+                <br>
+                <p><strong>Segunda a Sábado</strong> - 6:30h às 20h</p>
+                <p><strong>Domingo</strong> - 6:30h às 18h</p>
+                <br>
+                <p><strong>(42) 3625-1433</strong></p>
+                <p><strong>(42) 999231422</strong></p>
+                <br>
+                <p>Rua LOREM, n°123, Guarapuava,PR-BR</p>
+                <p>85139-400</p>
+                <br>
+                <p>panificadora@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    <div id="fim">
+        <h4>Todos os direitos reservados</h4>
+    </div>
+
+</body>
+
+</html>

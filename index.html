@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANIFICADORA - PÃES PARA A FAMÍLIA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d14e5bca35.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/estilo.css" />
+    <!--normalize-->
+    <link rel="stylesheet" type="text/css" href="assets/normalize.css">
+
+    <style>
+        @media screen and (max-width: 480px) {
+            .navbar{ 
+                display: flex;
+                flex-direction: column;
+                float:left;  
+                list-style: none;
+            }
+            .navbar-nav a .nav-link{
+                float: left;
+                display: inline-block;
+                padding: 10px 0;
+                width:100%;
+                text-decoration: none;
+                margin: 0;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .navbar{
+                height:100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;   
+                list-style: none;
+            }
+            .navbar-nav .nav-link{
+                display: inline-block;
+                padding: 10px 0;
+                width:100%;
+                text-decoration: none;
+                margin: 0;
+            }
+        }
+        @media screen and (max-width: 1024px) {
+
+        }
+        @media screen and (max-width: 1440px) {
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar  fixed-top justify-content-center">                
+            <div class="collapse navbar-collapse" id="nav-principal">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cardapio.html" class="nav-link">CARDÁPIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pedido.html" class="nav-link">PEDIDO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link">CONTATO</a>
+                    </li>
+                </ul>
+            </div>    
+    </nav>
+    <header>
+        <div id="titulo">
+            <h3 id="nome">PANIFICADORA FAMÍLIA</h3>
+            <h1 id="nome1"><strong>PÃES</strong></h1>
+            <h1 id="nome1"><strong>DA FAMÍLIA</strong></h1>
+            <div class="flex">
+                <div class="inf">
+                    <h4>ENCONTRE-NOS</h4>
+                    <p>Rua LOREM, n°123</p>
+                    <p>Guarapuava,PR-BR</p>
+                    <p>85139-400</p>
+                </div>
+                <div class="inf">
+                    <h4>HORAS</h4>
+                    <p><strong>Segunda a Sábado</strong></p>
+                    <p>6:30h - 20h</p>
+                    <p><strong>Domingo</strong></p>
+                    <p>6:30h - 18h</p>
+                </div>
+                <div class="inf">
+                    <h4>LIGUE PARA NÓS</h4>
+                    <p><strong>(42) 3625-1433</strong></p>
+                    <p><strong>(42) 999231422</strong></p>
+                </div>
+            </div>
+        </div>
+        
+    <div class="flex" id="contato-header">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">WhatsApp
+                        <span>
+                            <i class="fa fa-whatsapp"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Facebook
+                        <span>
+                            <i class="fa fa-facebook"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Instagram
+                        <span>
+                            <i class="fa fa-instagram"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Gmail
+                        <span>
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+    </header>
+    <div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="assets/imagens/carrosel1.jpg" alt="Propaganda1" style="width: 100%;">
+                </div>
+
+                <div class="item">
+                    <img src="assets/imagens/carrosel2.jpg" alt="Propaganda2" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="assets/imagens/carrosel3.jpg" alt="Propaganda3" style="width:100%;">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <main>
+        <section>
+            <h2 class="h2-titulo">Nossos Pães</h2>
+                <div class="container">
+                  <div class="row align-items-start">
+                    <div class="col-sm-3">
+                      <div class="item">
+                            <img class="item-img" src="assets/imagens/pexels-evgeniy-alekseyev-7333071.jpg" width="150px" height="150px">
+                            <h6 class="item-h6">BRIOCHE</h6>
+                            <p class="item-texto"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quos
+                            unde.</em></p>
+                            <a class="item-a">Mais</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="item">
+                            <img class="item-img" src="assets/imagens/pexels-flo-maderebner-745988.jpg" width="170px" height="150px">
+                            <h6 class="item-h6">CRAFT MALTE</h6>
+                            <p class="item-texto"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quos
+                            unde.</em></p>
+                            <a class="item-a">Mais</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="item">
+                            <img class="item-img" src="assets/imagens/pexels-gil-goldman-1555813.jpg" width="150px" height="150px">
+                            <h6 class="item-h6">INTEGRAL 100%</h6>
+                            <p class="item-texto"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quos
+                            unde.</em></p>
+                            <a class="item-a">Mais</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="item">
+                            <img class="item-img" src="assets/imagens/pexels-karolina-grabowska-4197913.jpg" width="160px" height="150px">
+                            <h6 class="item-h6">PÃO D'ÁGUA</h6>
+                            <p class="item-texto"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quos
+                            unde.</em></p>
+                            <a class="item-a">Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-sm-3">
+                      <div class="item">
+                            <img class="item-img" src="assets/imagens/pexels-mariana-kurnyk-1775033.jpg" width="150px" height="150px">
+                            <h6 class="item-h6">PÃO BAGUETE</h6>
+                            <p class="item-texto"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quos
+                            unde.</em></p>
+                            <a class="item-a">Mais</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="item">
+                            <img class="item-img" src="assets/imagens/pexels-nadin-sh-11214698.jpg" width="150px" height="150px">
+                            <h6 class="item-h6">8 GRÃOS</h6>
+                            <p class="item-texto"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quos
+                            unde.</em></p>
+                            <a class="item-a">Mais</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="item">
+                            <img class="item-img" src="assets/imagens/pexels-pixabay-209206.jpg" width="150px" height="150px">
+                            <h6 class="item-h6">CASEIRO</h6>
+                            <p class="item-texto"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quos
+                            unde.</em></p>
+                            <a class="item-a">Mais</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="item">
+                            <img class="item-img" src="assets/imagens/pexels-pixabay-263168.jpg" width="170px" height="150px">
+                            <h6 class="item-h6">ITALIANO</h6>
+                            <p class="item-texto"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quos
+                            unde.</em></p>
+                            <a class="item-a">Mais</a>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <section id="inf-padaria">
+            <h2 class="h2-titulo">Cozimento Delicioso</h2>
+            <div class="row align-items-start">
+              <div class="col-sm-5 col-md-offset-1">
+                  <div class="inf-texto">
+                    <h6>Assado Fresco Diariamente</h6>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente distinctio in laborum.
+                        Blanditiis
+                        architecto aliquam voluptatem sit, repudiandae voluptas, ullam dolor quasi amet asperiores
+                        pariatur
+                        nihil delectus doloremque, culpa illum!</p>
+                </div>
+              </div>
+              <div class="col-sm-5 ">
+                  <div class="inf-texto">
+                    <h6>Entregamos na sua porta</h6>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente distinctio in laborum.
+                        Blanditiis
+                        architecto aliquam voluptatem sit, repudiandae voluptas, ullam dolor quasi amet asperiores
+                        pariatur
+                        nihil delectus doloremque, culpa illum!</p>
+                </div>
+              </div>
+              <div class="w-100"></div>
+              <div class="col-sm-5 col-md-offset-1">
+                  <div class="inf-texto">
+                    <h6>Nenhum pedido é muito grande</h6>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente distinctio in laborum.
+                        Blanditiis
+                        architecto aliquam voluptatem sit, repudiandae voluptas, ullam dolor quasi amet asperiores
+                        pariatur
+                        nihil delectus doloremque, culpa illum!</p>
+                </div>
+              </div>
+              <div class="col-sm-5">
+                  <div class="inf-texto">
+                    <h6>Valor Bom</h6>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente distinctio in laborum.
+                        Blanditiis
+                        architecto aliquam voluptatem sit, repudiandae voluptas, ullam dolor quasi amet asperiores
+                        pariatur
+                        nihil delectus doloremque, culpa illum!</p>
+                </div>
+              </div>
+              <div class="w-100"></div>
+              <div class="col-sm-5 col-md-offset-1">
+                  <div class="inf-video">
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/LJm3gPvWgkI?si=43zuenc2mbj3kpkn"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-sm-5">
+                  <div class="inf-video">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28830.191846013342!2d-51.51644272568363!3d-25.412375199999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ef498acceaf1f9%3A0x41337ee2a2a1a569!2sPanificadora%20da%20Fam%C3%ADlia!5e0!3m2!1spt-BR!2sbr!4v1693073902175!5m2!1spt-BR!2sbr"
+                        width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="flex container">
+            <div id="footer-texto">
+                <h4>Contato</h4>
+                <br>
+                <p><strong>Segunda a Sábado</strong> - 6:30h às 20h</p>
+                <p><strong>Domingo</strong> - 6:30h às 18h</p>
+                <br>
+                <p><strong>(42) 3625-1433</strong></p>
+                <p><strong>(42) 999231422</strong></p>
+                <br>
+                <p>Rua LOREM, n°123, Guarapuava,PR-BR</p>
+                <p>85139-400</p>
+                <br>
+                <p>panificadora@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    <div id="fim">
+        <h4>Todos os direitos reservados</h4>
+    </div>
+
+</body>
+
+</html>
